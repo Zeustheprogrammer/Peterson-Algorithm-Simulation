@@ -61,9 +61,7 @@ if __name__ == "__main__":
 
     start_button = tk.Button(root, text="Start Simulation", command=lambda: start_simulation(num_processes, text_widget,
                                                                                                shared_resource))
-    
-start_button.pack()
-
-stop_button = tk.Button(root,text="Stop Simulation", command=root.destroy)
-stop_button.pack()
-root.mainloop()
+    start_button.pack()
+    stop_button = tk.Button(root,text="Stop Simulation", command=root.destroy)
+    stop_button.pack()
+    root.mainloop()
